@@ -1,20 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Git Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Eugenia Maia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href ="#home">Home</a></li>
-            <li><a href ="#about">About</a></li>
-            <li><a href ="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Hello Git</h1>
-    <p>This is my first project with version control samina mina ee </p>
+
+  <nav class="navigasi">
+    <div class="logo">Eugenia Grasela Maia</div>
+    <ul class="tautan-nav">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#organization">Organizational Experience</a></li>
+      <li><a href="#certificate">Certificate</a></li>
+      <li><a href="#kontak" class="tombol-nav">Contact Me!</a></li>
+    </ul>
+  </nav>
+
+  <section class="bagian-utama">
+    <div class="teks-utama">
+      <h1>Hi, I'm <span class="teks-hijau">Eugenia</span>,<br>your future <span class="teks-hijau">Data Analyst</span>.</h1>
+      <p>
+        Informatics Engineering Student in University of Lampung.<br>
+        Strong interest in data analysis, machine learning & AI development.
+      </p>
+      <div class="tombol-kelompok">
+        <a href="#project" class="tombol-utama">See My Work</a>
+        <a href="#kontak" class="tombol-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="gambar-utama">
+      <img src="profilePic.jpg" alt="Foto Profil Eugenia">
+    </div>
+  </section>
+
+  <section id="about" class="bagian">
+    <h2>About Me</h2>
+    <p>
+      Informatics Engineering student with a strong interest in data analysis, and project management. Skilled 
+      in Figma, MySQL, Python, and Excel, with a certification in Database Design from Oracle. Known as a fast learner, 
+      highly collaborative, and actively engaged in student organizations. Eager to grow in a dynamic tech environment.
+    </p>
+  </section>
+
+  <section id="skills" class="bagian">
+    <h2>Skills</h2>
+    <ul class="daftar-keahlian">
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <li>Data Analysis</li>
+      <li>IoT</li>
+    </ul>
+  </section>
+
+  <section id="project" class="bagian">
+    <h2>Projects</h2>
+    <div class="daftar-proyek">
+      <div class="kartu-proyek">
+        <h3>Personality Classification</h3>
+        <p>Personality Classification using Support Vector Machine Algorithm.</p>
+        <a href="https://github.com/maiamaiaa/sistem-klasifikasi-kepribadian.git" target="_blank" class="tombol-utama">View on Github</a>
+      </div>
+      <div class="kartu-proyek">
+        <h3>E-Commerce Database Design</h3>
+        <p>Designed and implemented a relational database for an e-commerce system using MySQL.</p>
+      </div>
+      <div class="kartu-proyek">
+        <h3>Disease Diagnosis System</h3>
+        <p>Disease Diagnosis System using Reasoning's Method : Backward Chaining Algorithm.</p>
+        <a href="https://github.com/maiamaiaa/sistem-pakar-diagnosis-penyakit.git" target="_blank" class="tombol-utama">View on Github</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="organization" class="bagian">
+    <h2>Organization & Experiences</h2>
+    <div class="daftar-organisasi">
+      <div class="kartu-organisasi">
+        <h3>Himpunan Mahasiswa Teknik Elektro (Himatro) Universitas Lampung</h3>
+        <p><strong>Staff of Research and Technology Division</strong> (2025-present)</p>
+        <p>Contributed to student research projects and supported technology-based events in the faculty environment.</p>
+      </div>
+
+      <div class="kartu-organisasi">
+        <h3>Electrical Engineering in Action 2025</h3>
+        <p><strong>Executive Secretary</strong> (April-October 2025)</p>
+        <p>Managed administration, documentation, and communication for national events with 2000 target participants . 
+          Drafted proposals, timelines, and reports. Acted as liaison between teams, faculty, and sponsors. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificate" class="bagian">
+    <h2>Certificate</h2>
+    <ul>
+      <li>Belajar Dasar Pemrograman Web - Dicoding</li>
+      <li>Machine Learning for Beginners - Dicoding</li>
+      <li>Database Design - Oracle Academy</li>
+    </ul>
+  </section>
+
+  <section id="kontak" class="bagian kontak">
+    <h2>Contact Me!</h2>
+    <form>
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea rows="4" placeholder="Write a message..."></textarea>
+      <button type="submit" class="tombol-utama">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Eugenia Grasela Maia | Universitas Lampung</p>
+  </footer>
+
 </body>
 </html>
