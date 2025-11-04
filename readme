@@ -1,0 +1,59 @@
+# 🌐 Project Portofolio
+
+Proyek ini merupakan latihan penerapan **version control menggunakan Git dan GitHub**, dengan contoh sederhana berupa website portofolio berbasis **HTML dan CSS**.  
+Proyek ini juga digunakan untuk memahami alur kerja Git seperti **commit, push, pull, dan merge conflict resolution**.
+
+---
+
+## 📁 Struktur Folder
+project-portofolio/
+│
+├── index.html # Halaman utama
+├── style.css # File CSS untuk tampilan
+└── README.md # Dokumentasi proyek
+
+---
+
+## ⚙️ Langkah Instalasi
+
+1. **Clone repository dari GitHub**
+   git clone https://github.com/maiamiaa/percobaan2.git
+2. **Masuk ke folder project**
+   cd project-portofolio
+3. **Open from VSCODE**
+    code .
+
+🚀 Cara Penggunaan
+
+1. **Buka file index.html menggunakan browser (klik dua kali atau drag ke browser).**
+2. **Untuk mengedit tampilan, ubah file style.css.**
+3. **Jika ingin melakukan perubahan dan menyimpannya ke GitHub:**
+    git add .
+    git commit -m "Perubahan pada tampilan portofolio"
+    git push origin master
+4. **Jika ada perubahan dari GitHub, tarik pembaruan ke lokal:**
+    git pull origin master
+
+🧩 Fitur
+Navigasi sederhana (Home, About, Contact)
+
+Tampilan responsif menggunakan CSS dasar
+
+Implementasi version control Git
+
+🧠 Tujuan Pembelajaran
+
+Proyek ini dibuat sebagai bagian dari praktikum Pemrograman Web, dengan tujuan:
+
+Mempelajari penggunaan Git untuk kolaborasi proyek.
+
+Memahami konflik merge dan cara penyelesaiannya.
+
+Mengelola proyek web statis dengan version control.
+
+👩‍💻 Pembuat
+
+Nama: Eugenia Maia
+Universitas: Universitas Lampung
+Mata Kuliah: Praktikum Pemrograman Web
+Semester: 5
