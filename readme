@@ -16,22 +16,22 @@ project-portofolio/
 
 ## ⚙️ Langkah Instalasi
 
-1. **Clone repository dari GitHub**
+1. Clone repository dari GitHub
    git clone https://github.com/maiamiaa/percobaan2.git
-2. **Masuk ke folder project**
+2. Masuk ke folder project
    cd project-portofolio
-3. **Open from VSCODE**
+3. Open from VSCODE
     code .
 
 🚀 Cara Penggunaan
 
-1. **Buka file index.html menggunakan browser (klik dua kali atau drag ke browser).**
-2. **Untuk mengedit tampilan, ubah file style.css.**
-3. **Jika ingin melakukan perubahan dan menyimpannya ke GitHub:**
+1. Buka file index.html menggunakan browser (klik dua kali atau drag ke browser).
+2. Untuk mengedit tampilan, ubah file style.css.
+3. Jika ingin melakukan perubahan dan menyimpannya ke GitHub:
     git add .
     git commit -m "Perubahan pada tampilan portofolio"
     git push origin master
-4. **Jika ada perubahan dari GitHub, tarik pembaruan ke lokal:**
+4. Jika ada perubahan dari GitHub, tarik pembaruan ke lokal:
     git pull origin master
 
 🧩 Fitur
