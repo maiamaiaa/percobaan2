@@ -157,8 +157,7 @@ Agar website dapat diakses publik:
 
 1. Masuk ke **Settings → Pages** di GitHub.
 2. Pada bagian *Source*, pilih branch `main` dan folder root `/`.
-3. Setelah disimpan, situs akan tersedia di:
-   `https://username.github.io/project-portofolio/`
+3. Setelah disimpan, situs akan tersedia di interface github
 
 ---
 
