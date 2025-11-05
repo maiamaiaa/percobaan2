@@ -1,59 +1,177 @@
-# 🌐 Project Portofolio
+# 📘 Project Portofolio — Langkah Pembuatan
 
-Proyek ini merupakan latihan penerapan **version control menggunakan Git dan GitHub**, dengan contoh sederhana berupa website portofolio berbasis **HTML dan CSS**.  
-Proyek ini juga digunakan untuk memahami alur kerja Git seperti **commit, push, pull, dan merge conflict resolution**.
+README ini menjelaskan langkah-langkah pembuatan proyek `project-portofolio`. Proyek ini digunakan untuk latihan penggunaan **Git dan GitHub**, serta memahami alur kerja version control seperti *commit*, *push*, *pull*, dan *merge conflict*.
 
 ---
 
-## 📁 Struktur Folder
+## 🧩 Tujuan Proyek
+
+Proyek ini dibuat untuk:
+
+* Mempelajari dasar penggunaan Git dan GitHub.
+* Memahami cara kerja branch, commit, dan merge.
+* Menyusun proyek web sederhana berbasis HTML & CSS.
+
+---
+
+## ⚙️ Langkah-Langkah Pembuatan
+
+### 1️⃣ Membuat Folder Proyek
+
+Buat folder bernama `project-portofolio` berisi tiga file utama:
+
+```
 project-portofolio/
-│
-├── index.html # Halaman utama
-├── style.css # File CSS untuk tampilan
-└── README.md # Dokumentasi proyek
+├── index.html
+├── style.css
+└── README.md
+```
+
+File `index.html` berisi tampilan website portofolio, `style.css` berisi gaya tampilan, dan `README.md` berisi dokumentasi proyek.
 
 ---
 
-## ⚙️ Langkah Instalasi
+### 2️⃣ Inisialisasi Git
 
-1. Clone repository dari GitHub
-   git clone https://github.com/maiamiaa/percobaan2.git
-2. Masuk ke folder project
-   cd project-portofolio
-3. Open from VSCODE
-    code .
+Buka folder proyek di VS Code, lalu jalankan perintah berikut di terminal:
 
-🚀 Cara Penggunaan
+```
+git init
+```
 
-1. Buka file index.html menggunakan browser (klik dua kali atau drag ke browser).
-2. Untuk mengedit tampilan, ubah file style.css.
-3. Jika ingin melakukan perubahan dan menyimpannya ke GitHub:
-    git add .
-    git commit -m "Perubahan pada tampilan portofolio"
-    git push origin master
-4. Jika ada perubahan dari GitHub, tarik pembaruan ke lokal:
-    git pull origin master
+Perintah ini membuat repository Git lokal di folder proyek.
 
-🧩 Fitur
-Navigasi sederhana (Home, About, Contact)
+Atur identitas Git dengan:
 
-Tampilan responsif menggunakan CSS dasar
+```
+git config --global user.name "Nama Pengguna"
+git config --global user.email "email@domain.com"
+```
 
-Implementasi version control Git
+---
 
-🧠 Tujuan Pembelajaran
+### 3️⃣ Commit Pertama
 
-Proyek ini dibuat sebagai bagian dari praktikum Pemrograman Web, dengan tujuan:
+Tambahkan semua file ke repository lokal dan buat commit awal:
 
-Mempelajari penggunaan Git untuk kolaborasi proyek.
+```
+git add .
+git commit -m "Initial commit: tambah file index.html, style.css, README.md"
+```
 
-Memahami konflik merge dan cara penyelesaiannya.
+---
 
-Mengelola proyek web statis dengan version control.
+### 4️⃣ Membuat Repository di GitHub
 
-👩‍💻 Pembuat
+Buka GitHub, buat repository baru dengan nama `project-portofolio`. Jangan centang *Initialize this repository with a README* agar tidak terjadi konflik saat push pertama.
 
-Nama: Eugenia Maia
-Universitas: Universitas Lampung
-Mata Kuliah: Praktikum Pemrograman Web
-Semester: 5
+---
+
+### 5️⃣ Menghubungkan Repository Lokal ke GitHub
+
+Salin URL repository GitHub, lalu jalankan perintah berikut di terminal:
+
+```
+git remote add origin https://github.com/username/project-portofolio.git
+git branch -M main
+git push -u origin main
+```
+
+Perintah tersebut menghubungkan repository lokal dengan GitHub dan mengunggah file proyek.
+
+---
+
+### 6️⃣ Workflow Sehari-hari
+
+Gunakan langkah berikut setiap kali ada perubahan:
+
+```
+git add .
+git commit -m "Perubahan pada tampilan portofolio"
+git push origin main
+```
+
+Jika ada pembaruan di GitHub, tarik ke lokal dengan:
+
+```
+git pull origin main
+```
+
+Untuk membuat fitur baru tanpa mengganggu branch utama:
+
+```
+git checkout -b feature/nama-fitur
+```
+
+Setelah selesai:
+
+```
+git push origin feature/nama-fitur
+```
+
+Lalu buat *Pull Request* (PR) di GitHub untuk menggabungkannya ke branch utama.
+
+---
+
+### 7️⃣ Menyelesaikan Merge Conflict
+
+Merge conflict terjadi saat dua orang mengubah bagian kode yang sama. Langkah penyelesaiannya:
+
+1. Tarik update terbaru dari GitHub:
+
+   ```
+   git pull origin main
+   ```
+2. Jika ada konflik, buka file yang bermasalah dan perhatikan tanda:
+
+   ```
+   <<<<<< HEAD
+   versi lokal
+   ======
+   versi dari GitHub
+   >>>>>>
+   ```
+3. Pilih atau gabungkan bagian yang benar, lalu simpan perubahan:
+
+   ```
+   git add <file>
+   git commit -m "Resolve merge conflict pada <file>"
+   ```
+4. Terakhir, kirim hasil perbaikan ke GitHub:
+
+   ```
+   git push origin main
+   ```
+
+---
+
+### 8️⃣ Melihat Hasil Proyek
+
+Buka `index.html` langsung di browser atau gunakan ekstensi **Live Server** di VS Code untuk melihat hasil secara langsung.
+
+---
+
+### 9️⃣ (Opsional) Deploy ke GitHub Pages
+
+Agar website dapat diakses publik:
+
+1. Masuk ke **Settings → Pages** di GitHub.
+2. Pada bagian *Source*, pilih branch `main` dan folder root `/`.
+3. Setelah disimpan, situs akan tersedia di:
+   `https://username.github.io/project-portofolio/`
+
+---
+
+## 💻 Ringkasan Perintah Git Penting
+
+```
+git init
+git status
+git add .
+git commit -m "pesan"
+git remote add origin <url>
+git push -u origin main
+git checkout -b <branch>
+git merge <branch>
+git pull origin main
+```
