@@ -1,6 +1,6 @@
 # 📘 Project Portofolio — Langkah Pembuatan
 
-README ini menjelaskan langkah-langkah pembuatan proyek `project-portofolio`. Proyek ini digunakan untuk latihan penggunaan **Git dan GitHub**, serta memahami alur kerja version control seperti *commit*, *push*, *pull*, dan *merge conflict*.
+README ini menjelaskan langkah-langkah pembuatan proyek project-portofolio. Proyek ini digunakan untuk latihan penggunaan Git dan GitHub, serta memahami alur kerja version control seperti commit, push, pull, dan merge conflict.
 
 ---
 
@@ -18,7 +18,7 @@ Proyek ini dibuat untuk:
 
 ### 1️⃣ Membuat Folder Proyek
 
-Buat folder bernama `project-portofolio` berisi tiga file utama:
+Buat folder bernama project-portofolio berisi tiga file utama:
 
 ```
 project-portofolio/
@@ -27,7 +27,7 @@ project-portofolio/
 └── README.md
 ```
 
-File `index.html` berisi tampilan website portofolio, `style.css` berisi gaya tampilan, dan `README.md` berisi dokumentasi proyek.
+File index.html berisi tampilan website portofolio, style.css berisi gaya tampilan, dan README.md berisi dokumentasi proyek.
 
 ---
 
@@ -63,8 +63,7 @@ git commit -m "Initial commit: tambah file index.html, style.css, README.md"
 
 ### 4️⃣ Membuat Repository di GitHub
 
-Buka GitHub, buat repository baru dengan nama `project-portofolio`. Jangan centang *Initialize this repository with a README* agar tidak terjadi konflik saat push pertama.
-
+Buka GitHub, buat repository baru dengan nama project-portofolio.
 ---
 
 ### 5️⃣ Menghubungkan Repository Lokal ke GitHub
@@ -73,8 +72,8 @@ Salin URL repository GitHub, lalu jalankan perintah berikut di terminal:
 
 ```
 git remote add origin https://github.com/username/project-portofolio.git
-git branch -M main
-git push -u origin main
+git branch -M master
+git push -u origin master
 ```
 
 Perintah tersebut menghubungkan repository lokal dengan GitHub dan mengunggah file proyek.
@@ -109,7 +108,7 @@ Setelah selesai:
 git push origin feature/nama-fitur
 ```
 
-Lalu buat *Pull Request* (PR) di GitHub untuk menggabungkannya ke branch utama.
+Lalu buat Pull Request (PR) di GitHub untuk menggabungkannya ke branch utama.
 
 ---
 
@@ -147,7 +146,7 @@ Merge conflict terjadi saat dua orang mengubah bagian kode yang sama. Langkah pe
 
 ### 8️⃣ Melihat Hasil Proyek
 
-Buka `index.html` langsung di browser atau gunakan ekstensi **Live Server** di VS Code untuk melihat hasil secara langsung.
+Buka index.html langsung di browser atau gunakan ekstensi Live Server di VS Code untuk melihat hasil secara langsung.
 
 ---
 
@@ -155,8 +154,8 @@ Buka `index.html` langsung di browser atau gunakan ekstensi **Live Server** di V
 
 Agar website dapat diakses publik:
 
-1. Masuk ke **Settings → Pages** di GitHub.
-2. Pada bagian *Source*, pilih branch `main` dan folder root `/`.
+1. Masuk ke Settings → Pages di GitHub.
+2. Pada bagian Source, pilih branch main dan folder root /.
 3. Setelah disimpan, situs akan tersedia di interface github
 
 ---
